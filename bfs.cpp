@@ -2,7 +2,6 @@
 #include <queue>
 #include <vector>
 using namespace std;
-
 void bfs(vector<vector<int>> &adjList, int startNode, vector<bool> &visited)
 {
     queue<int> q;
@@ -31,7 +30,6 @@ int main()
 {
     int vertices = 5;
     vector<vector<int>> adjList(vertices);
-
     addEdge(adjList, 0, 1);
     addEdge(adjList, 0, 2);
     addEdge(adjList, 1, 3);
