@@ -1,4 +1,5 @@
 #include<iostream>
+#include<ctime>
 using namespace std;
 void insertionSort(int arr[], int n)
 {
@@ -16,6 +17,7 @@ void insertionSort(int arr[], int n)
 }
 int main()
 {
+	clock_t start = clock();
 	int arr[]={65,85,225,20,1,41,65,69,2};
 	int n= sizeof(arr)/sizeof(arr[0]);
 	cout<<"Original Array: ";
@@ -32,4 +34,6 @@ int main()
 	}
 	cout<<endl;
 	return 0;
+	clock_t end = clock();
+	double elapsed_secs = double(end-start)/CLOCKS_PER_SEC;
 }
